@@ -1,0 +1,27 @@
+#!/bin/bash
+
+setxkbmap se
+/home/martin/.screenlayout/dual.sh &
+/usr/lib/polkit-gnome//polkit-gnome-authentication-agent-1 &
+
+#ckb-next --background &
+#wal -R &
+signal-desktop --start-in-tray &
+
+#variety &
+flameshot &
+#pamac-tray &
+picom -Cf &
+#xfce4-power-manager &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+#dunst &
+numlockx &
+#dwmblocks &
+slstatus &
+nm-applet &
+volumeicon &
+#cd /home/martin/Downloads/headset-charge-indicator/
+#nohup python3 headset-charge-indicator.py &
+nitrogen --restore &
+
+exec dwm
